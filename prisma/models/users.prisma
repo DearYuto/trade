@@ -3,7 +3,7 @@ model User {
     email     String   @unique
     password  String
     balance   Float    @default(0)
-    orders 
+    orders    Order[]
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 }
